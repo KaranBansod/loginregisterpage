@@ -13,7 +13,7 @@ function LoginPage() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:8000/login', loginData);
+      const response = await axios.post('https://loginregisterpage.onrender.com/login', loginData);
       const { success, message } = response.data;
 
       if (success) {
