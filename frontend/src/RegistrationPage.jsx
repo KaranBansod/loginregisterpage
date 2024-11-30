@@ -20,7 +20,7 @@ function RegistrationPage() {
   const handleRegistrationSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/register', registrationData);
+      const response = await axios.post('https://loginregisterpage.onrender.com/register', registrationData);
       console.log(response.data);
     } catch (error) {
       console.log(error);
